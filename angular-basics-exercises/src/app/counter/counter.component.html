@@ -1,0 +1,16 @@
+<p>counter component</p>
+<button
+  class="btn btn-danger"
+  (click)="counterValue = counterValue + 1"
+  [ngStyle]="{ 'margin.px': 5, 'max-width.px': 15 }"
+>
+  +
+</button>
+<button
+  class="btn btn-success"
+  (click)="counterValue = counterValue - 1"
+  [ngStyle]="{ 'padding.px': 5, 'max-width.px': 15 }"
+>
+  -
+</button>
+<p>{{ counterValue }}</p>
